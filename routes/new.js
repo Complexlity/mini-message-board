@@ -3,8 +3,8 @@ const router = express.Router();
 const messages = require("../data/messages.json");
 
 const dayjs = require("dayjs");
-dayjs.extend(relativeTime);
 const relativeTime = require("dayjs/plugin/relativeTime");
+dayjs.extend(relativeTime);
 const fs = require("fs");
 
 const logger = (req, res, next) => {
